@@ -76,6 +76,9 @@
 		<module>springcloud-config-client</module>
 		<module>springcloud-config-repo</module>
 		<module>springcloud-gateway</module>
+		<module>springcloud-monitor-turbine</module>
+		<module>springcloud-monitor-node1</module>
+		<module>springcloud-monitor-node2</module>
 	</modules>
 
 </project>

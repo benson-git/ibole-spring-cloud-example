@@ -6,22 +6,11 @@
 		<artifactId>springcloud-example</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<packaging>jar</packaging>
-	<artifactId>springcloud-service-provider</artifactId>
-
+	<artifactId>springcloud-monitor-turbine</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>	
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
+			<artifactId>spring-cloud-netflix-turbine</artifactId>
 		</dependency>
 	</dependencies>
-
 </project>
