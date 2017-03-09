@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.ibole</groupId>
-		<artifactId>spring-cloud-example</artifactId>
+		<artifactId>springcloud-example</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>springcloud-config-client</artifactId>
