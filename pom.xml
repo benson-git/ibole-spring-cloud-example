@@ -4,7 +4,7 @@
 	<groupId>io.ibole</groupId>
 	<artifactId>springcloud-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+	<packaging>pom</packaging>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -12,12 +12,13 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<properties>
+		<springfox.swagger.version>2.6.0</springfox.swagger.version>
 		<junit_version>4.12</junit_version>
 		<!-- Specify Java Compiler Version -->
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>	
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,6 +34,16 @@
 				<version>Camden.SR5</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${springfox.swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${springfox.swagger.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -66,5 +77,5 @@
 		<module>springcloud-config-repo</module>
 		<module>springcloud-gateway</module>
 	</modules>
-	
+
 </project>
