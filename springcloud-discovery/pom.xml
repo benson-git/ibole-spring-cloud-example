@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <packaging>jar</packaging>
-  <artifactId>springcloud-discovery</artifactId>
+  <artifactId>springcloud-service-discovery</artifactId>
   
  <dependencies>
     <dependency>

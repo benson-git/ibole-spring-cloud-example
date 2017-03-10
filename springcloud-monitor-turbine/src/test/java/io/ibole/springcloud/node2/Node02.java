@@ -1,4 +1,4 @@
-package io.ibole.springcloud.service.node;
+package io.ibole.springcloud.node2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -19,11 +19,11 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @RestController
-public class Node01 {
+public class Node02 {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Node01.class).properties(
-                "spring.config.name:node01").run(args);
+        new SpringApplicationBuilder(Node02.class).properties(
+                "spring.config.name:node02").run(args);
     }
 
     @Autowired
@@ -36,7 +36,7 @@ public class Node01 {
 
 
     @Component
-    public static class HelloService {
+ public static class HelloService {
 
         @HystrixCommand(fallbackMethod="fallback")
         public String hello() {
